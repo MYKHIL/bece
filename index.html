@@ -277,13 +277,13 @@
             const seenHashes = new Set();
             let cacheBuster = `v=${Date.now()}`;
 
+            // Try to load from each subject folder
             for (const subject of subjectFolders) {
-                // Try to find any JSON files in each subject folder
                 for (let i = 1; i <= 50; i++) {
                     const filePath = `default-questions/${subject}/set${i}.json`;
                     try {
-                        const headResponse = await fetch(filePath, { method: 'HEAD' });
-                        if (headResponse.ok) {
+                        const response = await fetch(filePath);
+                        if (response.ok) {
                             // Found a file in this subject folder
                             if (!availableSubjects[subject]) {
                                 availableSubjects[subject] = [];
@@ -291,22 +291,20 @@
                             }
                             availableSubjects[subject].push(filePath);
 
-                            // Load and parse the file
+                            // Parse the file
                             try {
-                                const response = await fetch(`${filePath}?${cacheBuster}`);
-                                if (response.ok) {
-                                    const data = await response.json();
-                                    if (Array.isArray(data)) {
-                                        for (const item of data) {
-                                            if (isValidQuestion(item)) {
-                                                const hash = createQuestionHash(item);
-                                                if (!seenHashes.has(hash)) {
-                                                    seenHashes.add(hash);
-                                                    subjectQuestions[subject].push(item);
-                                                }
+                                const data = await response.json();
+                                if (Array.isArray(data)) {
+                                    for (const item of data) {
+                                        if (isValidQuestion(item)) {
+                                            const hash = createQuestionHash(item);
+                                            if (!seenHashes.has(hash)) {
+                                                seenHashes.add(hash);
+                                                subjectQuestions[subject].push(item);
                                             }
                                         }
                                     }
+                                    console.log(`Loaded ${data.length} questions from ${filePath}`);
                                 }
                             } catch (e) {
                                 console.debug(`Error parsing ${filePath}:`, e.message);
@@ -327,7 +325,7 @@
             }
             subjectQuestions = finalSubjects;
 
-            console.log('Available subjects:', Object.keys(subjectQuestions));
+            console.log('Available subjects:', Object.keys(subjectQuestions), subjectQuestions);
             return subjectQuestions;
         }
 
@@ -413,56 +411,70 @@
             const loadingIndicator = document.getElementById('loading-indicator');
             loadingIndicator.classList.remove('hidden');
             
-            // 1. Scan subfolders first to identify available subjects
+            // Force cleanup after 10 seconds to prevent infinite loading
+            const loadingTimeout = setTimeout(() => {
+                console.error("Loading timeout - forcing completion");
+                if (allQuestions.length === 0) {
+                    allQuestions = [];
+                }
+                setView(currentView);
+                loadingIndicator.classList.add('hidden');
+            }, 10000);
+            
             try {
+                // 1. Scan subfolders first to identify available subjects
                 console.log("Scanning subject folders...");
+                document.getElementById('loading-status').textContent = 'Scanning for subjects...';
                 await scanSubfolders();
                 console.log(`Found ${Object.keys(subjectQuestions).length} subjects with questions`);
-            } catch (e) {
-                console.error("Error scanning subfolders:", e);
-            }
-
-            // 2. Load questions from default path and subject folders
-            try {
-                console.log("Starting to load questions from available sources...");
-                let loadedQuestions = await fetchJsonFilesRecursively();
                 
-                // Combine with subject questions if available
-                let allLoadedQuestions = [...loadedQuestions];
-                
-                // If we have subject-specific questions loaded, merge them
+                // Check if we found any questions from subjects
+                let totalSubjectQuestions = 0;
                 for (const [subject, questions] of Object.entries(subjectQuestions)) {
-                    // Tag questions with subject for filtering
-                    questions.forEach(q => {
-                        q.subject = subject;
-                    });
-                    allLoadedQuestions = allLoadedQuestions.concat(questions);
+                    totalSubjectQuestions += questions.length;
+                    console.log(`Subject: ${subject} - ${questions.length} questions`);
                 }
                 
-                // Remove duplicates
-                const seenHashes = new Set();
-                const uniqueQuestions = [];
-                for (const q of allLoadedQuestions) {
-                    const hash = createQuestionHash(q);
-                    if (!seenHashes.has(hash)) {
-                        seenHashes.add(hash);
-                        uniqueQuestions.push(q);
+                if (totalSubjectQuestions === 0) {
+                    console.warn("No questions found in subject folders, trying root path...");
+                    // Try loading from root path as fallback
+                    let loadedQuestions = await fetchJsonFilesRecursively();
+                    if (loadedQuestions.length > 0) {
+                        allQuestions = loadedQuestions.map((q, index) => ({
+                            ...q,
+                            id: index + 1
+                        }));
+                    } else {
+                        throw new Error('No question files found in either subject folders or root path');
                     }
-                }
-                
-                // Update progress bar
-                document.getElementById('loading-progress').style.width = '100%';
-                document.getElementById('loading-status').textContent = 'Organizing questions...';
-                
-                if (uniqueQuestions.length > 0) {
-                    console.log(`Successfully loaded ${uniqueQuestions.length} unique questions`);
-                    document.getElementById('loading-count').textContent = `${uniqueQuestions.length} questions loaded`;
+                } else {
+                    // Convert subject questions to allQuestions format
+                    let allLoadedQuestions = [];
+                    for (const [subject, questions] of Object.entries(subjectQuestions)) {
+                        // Tag questions with subject
+                        questions.forEach(q => {
+                            q.subject = subject;
+                        });
+                        allLoadedQuestions = allLoadedQuestions.concat(questions);
+                    }
                     
                     // Restructure IDs to be sequential
-                    allQuestions = uniqueQuestions.map((q, index) => ({
+                    allQuestions = allLoadedQuestions.map((q, index) => ({
                         ...q,
                         id: index + 1
                     }));
+                }
+                
+                // Update progress bar
+                const progressEl = document.getElementById('loading-progress');
+                if (progressEl) progressEl.style.width = '100%';
+                const statusEl = document.getElementById('loading-status');
+                if (statusEl) statusEl.textContent = 'Organizing questions...';
+                
+                if (allQuestions.length > 0) {
+                    console.log(`Successfully loaded ${allQuestions.length} unique questions`);
+                    const countEl = document.getElementById('loading-count');
+                    if (countEl) countEl.textContent = `${allQuestions.length} questions loaded`;
                     quizTitleEl.textContent = `Quiz Loaded: ${allQuestions.length} Total Questions`;
                     showMessage(`Loaded ${allQuestions.length} questions from ${Object.keys(subjectQuestions).length} subject(s).`, 'info');
                 } else {
@@ -470,7 +482,8 @@
                 }
             } catch (e) {
                 console.error("Error loading question files:", e);
-                document.getElementById('loading-status').textContent = 'Error loading questions, checking cache...';
+                const statusEl = document.getElementById('loading-status');
+                if (statusEl) statusEl.textContent = 'Error loading questions, checking cache...';
                 
                 // Fallback: try local storage, then empty state
                 const savedQuestions = localStorage.getItem(LOCAL_STORAGE_KEY);
@@ -490,6 +503,9 @@
                 }
             }
             
+            // Clear the safety timeout since loading is complete
+            clearTimeout(loadingTimeout);
+            
             // 2. Load Settings
             const savedSettings = localStorage.getItem(SETTINGS_KEY);
             if (savedSettings) {
@@ -501,7 +517,9 @@
                     loadedSettings.ttsRate = loadedSettings.ttsRate || 1;
                     loadedSettings.ttsPitch = loadedSettings.ttsPitch || 1;
                     
-                    loadedSettings.numQuestions = Math.min(loadedSettings.numQuestions, allQuestions.length);
+                    if (allQuestions.length > 0) {
+                        loadedSettings.numQuestions = Math.min(loadedSettings.numQuestions, allQuestions.length);
+                    }
                     Object.assign(quizSettings, loadedSettings);
                     console.log("Settings loaded. TTS Enabled:", quizSettings.ttsEnabled);
                 } catch (e) {
@@ -526,10 +544,19 @@
             // 5. Re-render based on loaded state
             setView(currentView);
             
-            // 6. Hide loading indicator
-            setTimeout(() => {
-                document.getElementById('loading-indicator').classList.add('hidden');
-            }, 500); // Small delay for smooth transition
+            // 6. Hide loading indicator with safety check
+            const hideLoadingIndicator = () => {
+                const indicator = document.getElementById('loading-indicator');
+                if (indicator) {
+                    indicator.classList.add('hidden');
+                }
+            };
+            
+            // Hide after 500ms or if DOM is ready
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', hideLoadingIndicator);
+            }
+            setTimeout(hideLoadingIndicator, 500);
         }
 
         function saveQuestions(questions) {
