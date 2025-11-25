@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "What is the **Highest Common Factor (HCF)** of **42** and **60**?",
+    "options": {
+      "A": "3",
+      "B": "**6**",
+      "C": "12",
+      "D": "21"
+    },
+    "answer": "B",
+    "explanation": "The factors of 42 are 1, 2, 3, **6**, 7, 14, 21, 42. The factors of 60 are 1, 2, 3, 4, 5, **6**, 10, 12, 15, 20, 30, 60. The common factors are 1, 2, 3, 6. The **HCF** is **6**."
+  },
+  {
+    "id": 2,
+    "question": "Convert the number **0.000034** into **standard form** (scientific notation).",
+    "options": {
+      "A": "$3.4 \\times 10^5$",
+      "B": "$**3.4 \\times 10^{-5}**$",
+      "C": "$34 \\times 10^{-6}$",
+      "D": "$0.34 \\times 10^{-4}$"
+    },
+    "answer": "B",
+    "explanation": "To move the decimal point after the first non-zero digit (**3**), we move it **5 places to the right**, hence the power is **-5**."
+  },
+  {
+    "id": 3,
+    "question": "Evaluate the expression: $\\frac{2}{3} + \\frac{1}{6}$.",
+    "options": {
+      "A": "$\\frac{3}{9}$",
+      "B": "$**\\frac{5}{6}**$",
+      "C": "$\\frac{1}{2}$",
+      "D": "$\\frac{4}{9}$"
+    },
+    "answer": "B",
+    "explanation": "The **LCM** of 3 and 6 is **6**. $\\frac{2}{3} + \\frac{1}{6} = \\frac{4}{6} + \\frac{1}{6} = **\\frac{5}{6}**$."
+  },
+  {
+    "id": 4,
+    "question": "Find **15%** of **80**.",
+    "options": {
+      "A": "**12**",
+      "B": "8",
+      "C": "15",
+      "D": "1.2"
+    },
+    "answer": "A",
+    "explanation": "**15%** of **80** is $\\frac{15}{100} \\times 80 = 0.15 \\times 80 = **12**$."
+  },
+  {
+    "id": 5,
+    "question": "Simplify: $\\frac{15x^2y}{5xy^2}$",
+    "options": {
+      "A": "$3xy$",
+      "B": "$**\\frac{3x}{y}**$",
+      "C": "$\\frac{3y}{x}$",
+      "D": "$3x^2y^2$"
+    },
+    "answer": "B",
+    "explanation": "Divide the numerator and denominator: $\\frac{15x^2y}{5xy^2} = \\frac{15}{5} \\cdot \\frac{x^2}{x} \\cdot \\frac{y}{y^2} = 3 \\cdot x \\cdot \\frac{1}{y} = **\\frac{3x}{y}**$."
+  }
+]

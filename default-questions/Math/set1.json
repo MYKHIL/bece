@@ -1,0 +1,1160 @@
+[
+  {
+    "id": 1,
+    "question": "What is the **Highest Common Factor (HCF)** of **42** and **60**?",
+    "options": {
+      "A": "3",
+      "B": "**6**",
+      "C": "12",
+      "D": "21"
+    },
+    "answer": "B",
+    "explanation": "The factors of 42 are 1, 2, 3, **6**, 7, 14, 21, 42. The factors of 60 are 1, 2, 3, 4, 5, **6**, 10, 12, 15, 20, 30, 60. The common factors are 1, 2, 3, 6. The **HCF** is **6**."
+  },
+  {
+    "id": 2,
+    "question": "Convert the number **0.000034** into **standard form** (scientific notation).",
+    "options": {
+      "A": "$3.4 \\times 10^5$",
+      "B": "$**3.4 \\times 10^{-5}**$",
+      "C": "$34 \\times 10^{-6}$",
+      "D": "$0.34 \\times 10^{-4}$"
+    },
+    "answer": "B",
+    "explanation": "To move the decimal point after the first non-zero digit (**3**), we move it **5 places to the right**, hence the power is **-5**."
+  },
+  {
+    "id": 3,
+    "question": "Evaluate the expression: $\\frac{2}{3} + \\frac{1}{6}$.",
+    "options": {
+      "A": "$\\frac{3}{9}$",
+      "B": "$**\\frac{5}{6}**$",
+      "C": "$\\frac{1}{2}$",
+      "D": "$\\frac{4}{9}$"
+    },
+    "answer": "B",
+    "explanation": "The **LCM** of 3 and 6 is **6**. $\\frac{2}{3} + \\frac{1}{6} = \\frac{4}{6} + \\frac{1}{6} = **\\frac{5}{6}**$."
+  },
+  {
+    "id": 4,
+    "question": "Find **15%** of **80**.",
+    "options": {
+      "A": "**12**",
+      "B": "8",
+      "C": "15",
+      "D": "1.2"
+    },
+    "answer": "A",
+    "explanation": "**15%** of **80** is $\\frac{15}{100} \\times 80 = 0.15 \\times 80 = **12**$."
+  },
+  {
+    "id": 5,
+    "question": "Share **GHS 300** in the ratio **2:3**. What is the **larger share**?",
+    "options": {
+      "A": "GHS 100",
+      "B": "GHS 120",
+      "C": "**GHS 180**",
+      "D": "GHS 200"
+    },
+    "answer": "C",
+    "explanation": "Total parts = **2 + 3 = 5**. The larger share is $\\frac{3}{5} \\times 300 = 3 \\times 60 = **180**$."
+  },
+  {
+    "id": 6,
+    "question": "Identify the set of **prime factors** of **30**.",
+    "options": {
+      "A": "{1, 2, 3, 5}",
+      "B": "**{2, 3, 5}**",
+      "C": "{1, 2, 3, 5, 15, 30}",
+      "D": "{2, 3, 5, 10}"
+    },
+    "answer": "B",
+    "explanation": "The **prime numbers** that divide **30** exactly are **2, 3, and 5**."
+  },
+  {
+    "id": 7,
+    "question": "The number $\\sqrt{25}$ is an **irrational number**.",
+    "options": {
+      "A": "True",
+      "B": "**False**"
+    },
+    "answer": "B",
+    "explanation": "$\\sqrt{25} = **5**$, which can be written as $\\frac{5}{1}$, making it a **rational number**."
+  },
+  {
+    "id": 8,
+    "question": "Which of the following numbers is an **irrational number**?",
+    "options": {
+      "A": "$0.333...$",
+      "B": "$\\frac{2}{7}$",
+      "C": "$\\sqrt{9}$",
+      "D": "$**\\sqrt{10}**$"
+    },
+    "answer": "D",
+    "explanation": "$**\\sqrt{10}**$ cannot be expressed as a simple fraction $\\frac{p}{q}$, and its decimal representation is **non-terminating and non-recurring**."
+  },
+  {
+    "id": 9,
+    "question": "Simplify $3^4 \\times 3^{-2}$.",
+    "options": {
+      "A": "$3^6$",
+      "B": "$**3^2**$",
+      "C": "$9^2$",
+      "D": "$3^{-8}$"
+    },
+    "answer": "B",
+    "explanation": "Using the law of indices $a^m \\times a^n = a^{m+n}$, we get $3^{4+(-2)} = **3^2**$."
+  },
+  {
+    "id": 10,
+    "question": "Convert the base two number **$1011_2$** to **base ten**.",
+    "options": {
+      "A": "**11**",
+      "B": "13",
+      "C": "9",
+      "D": "22"
+    },
+    "answer": "A",
+    "explanation": "$1011_2 = 1\\times 2^3 + 0\\times 2^2 + 1\\times 2^1 + 1\\times 2^0 = 8 + 0 + 2 + 1 = **11**$."
+  },
+  {
+    "id": 11,
+    "question": "Convert the base ten number **45** to **base two**.",
+    "options": {
+      "A": "$110101_2$",
+      "B": "$**101101_2**$",
+      "C": "$101110_2$",
+      "D": "$111001_2$"
+    },
+    "answer": "B",
+    "explanation": "Repeated division by 2 yields remainders 1, 0, 1, 1, 0, 1 (read upwards), so **$45 = 101101_2$**."
+  },
+  {
+    "id": 12,
+    "question": "The set of **whole numbers** $\{0, 1, 2, 3, ...\}$ is a subset of the set of **natural** (or counting) numbers $\{1, 2, 3, ...\}$.",
+    "options": {
+      "A": "True",
+      "B": "**False**"
+    },
+    "answer": "B",
+    "explanation": "The set of **natural numbers** is a subset of the set of **whole numbers**, as the whole numbers **include 0**, which the natural numbers do not. "
+  },
+  {
+    "id": 13,
+    "question": "Find the **complement** of set $A = \\{2, 4, 6, 8\\}$ if the universal set $U = \\{1, 2, 3, ..., 10\\}$.",
+    "options": {
+      "A": "$\\text{\\O}$",
+      "B": "$**\\{1, 3, 5, 7, 9, 10\\}**$",
+      "C": "$\\text{\\{1, 3, 5, 7, 9\\}}$",
+      "D": "$\\text{\\{1, 3, 5, 7, 10\\}}$"
+    },
+    "answer": "B",
+    "explanation": "The **complement** $A'$ contains all elements in **U** that are **not in A**. $A' = **\\{1, 3, 5, 7, 9, 10\\}**$."
+  },
+  {
+    "id": 14,
+    "question": "Simplify $(\\frac{1}{4})^3$.",
+    "options": {
+      "A": "$\\frac{1}{12}$",
+      "B": "$**\\frac{1}{64}**$",
+      "C": "$\\frac{3}{64}$",
+      "D": "$\\frac{1}{4}$"
+    },
+    "answer": "B",
+    "explanation": "$(\\frac{1}{4})^3 = \\frac{1^3}{4^3} = **\\frac{1}{64}**$."
+  },
+  {
+    "id": 15,
+    "question": "What is the **reciprocal** of the mixed fraction **$1\\frac{2}{5}$**?",
+    "options": {
+      "A": "$**\\frac{5}{7}**$",
+      "B": "$\\frac{7}{5}$",
+      "C": "$1\\frac{5}{2}$",
+      "D": "$-\\frac{7}{5}$"
+    },
+    "answer": "A",
+    "explanation": "First, convert $1\\frac{2}{5}$ to an improper fraction: $\\frac{7}{5}$. The **reciprocal** is found by inverting the fraction: **$\\frac{5}{7}$**."
+  },
+  {
+    "id": 16,
+    "question": "Calculate the **simple interest** on **GHS 500** at a rate of **10%** per annum for **2 years**.",
+    "options": {
+      "A": "**GHS 100**",
+      "B": "GHS 50",
+      "C": "GHS 110",
+      "D": "GHS 600"
+    },
+    "answer": "A",
+    "explanation": "Simple Interest (SI) = $\\frac{P \\times R \\times T}{100}$. $SI = \\frac{500 \\times 10 \\times 2}{100} = 5 \\times 10 \\times 2 = **100**$."
+  },
+  {
+    "id": 17,
+    "question": "If a map scale is **$1:50000$**, how many **kilometers** on the ground does **$1 cm$** on the map represent?",
+    "options": {
+      "A": "50 km",
+      "B": "$**0.5 km**$",
+      "C": "5 km",
+      "D": "0.05 km"
+    },
+    "answer": "B",
+    "explanation": "$1 cm$ represents $**50000 cm**$. Since $1 km = 100000 cm$, $50000 cm = \\frac{50000}{100000} km = **0.5 km**$."
+  },
+  {
+    "id": 18,
+    "question": "Every **integer** (e.g., -3, 0, 5) is a **rational number**.",
+    "options": {
+      "A": "**True**",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": "An **integer** $n$ can be written as **$\\frac{n}{1}$**, which fits the definition of a **rational number** (a number that can be expressed as a fraction $\\frac{p}{q}$ where $p$ and $q$ are integers and $q \\ne 0$). "
+  },
+  {
+    "id": 19,
+    "question": "The number **1** is classified as a **prime number**.",
+    "options": {
+      "A": "True",
+      "B": "**False**"
+    },
+    "answer": "B",
+    "explanation": "A **prime number** is a natural number **greater than 1** that has exactly two distinct positive divisors: 1 and itself. The number **1** only has **one** divisor (1)."
+  },
+  {
+    "id": 20,
+    "question": "Find the **Lowest Common Multiple (LCM)** of **8, 12, and 16**.",
+    "options": {
+      "A": "24",
+      "B": "**48**",
+      "C": "96",
+      "D": "4"
+    },
+    "answer": "B",
+    "explanation": "Multiples of 8: 8, 16, 24, 32, 40, **48**,... Multiples of 12: 12, 24, 36, **48**,... Multiples of 16: 16, 32, **48**,... The **LCM** is **48**."
+  },
+  {
+    "id": 21,
+    "question": "Express the mixed fraction **$3 \\frac{1}{8}$** as an **improper fraction**.",
+    "options": {
+      "A": "$\\frac{31}{8}$",
+      "B": "$**\\frac{25}{8}**$",
+      "C": "$\\frac{11}{8}$",
+      "D": "$\\frac{24}{8}$"
+    },
+    "answer": "B",
+    "explanation": "$3 \\frac{1}{8} = \\frac{(3 \\times 8) + 1}{8} = \\frac{24 + 1}{8} = **\\frac{25}{8}**$."
+  },
+  {
+    "id": 22,
+    "question": "Simplify **$\\sqrt{144}$**.",
+    "options": {
+      "A": "14",
+      "B": "72",
+      "C": "**12**",
+      "D": "12.2"
+    },
+    "answer": "C",
+    "explanation": "The **square root** of 144 is **12**, since $**12 \\times 12 = 144**$."
+  },
+  {
+    "id": 23,
+    "question": "If $A = \\{x: x \\text{ is a positive integer and } x < 5\\}$, what is **$n(A)$** (the **number of elements** in set A)?",
+    "options": {
+      "A": "5",
+      "B": "**4**",
+      "C": "3",
+      "D": "6"
+    },
+    "answer": "B",
+    "explanation": "The set **A** is **\\{1, 2, 3, 4\\}**. It contains **4 elements**."
+  },
+  {
+    "id": 24,
+    "question": "The number $**4.5 \\times 10^3**$ is exactly equal to **4500**.",
+    "options": {
+      "A": "**True**",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": "$4.5 \\times 10^3 = 4.5 \\times 1000 = **4500**$."
+  },
+  {
+    "id": 25,
+    "question": "Solve for $x$: $\\frac{x}{3} = 4$.",
+    "options": {
+      "A": "7",
+      "B": "1",
+      "C": "**12**",
+      "D": "$\\frac{4}{3}$"
+    },
+    "answer": "C",
+    "explanation": "Multiply both sides by **3**: $x = 4 \\times 3 = **12**$."
+  },
+  {
+    "id": 26,
+    "question": "Simplify the algebraic expression $**3x + 5y - x + 2y**$.",
+    "options": {
+      "A": "$**2x + 7y**$",
+      "B": "$4x + 7y$",
+      "C": "$2x + 3y$",
+      "D": "$4x + 3y$"
+    },
+    "answer": "A",
+    "explanation": "Combine like terms: $(3x - x) + (5y + 2y) = **2x + 7y**$."
+  },
+  {
+    "id": 27,
+    "question": "Factorize the expression $**6a^2 - 9a**$ completely.",
+    "options": {
+      "A": "$3(2a^2 - 3a)$",
+      "B": "$**3a(2a - 3)**$",
+      "C": "$6a(a - \\frac{3}{2})$",
+      "D": "$3a^2(2 - 3)$"
+    },
+    "answer": "B",
+    "explanation": "The **Greatest Common Divisor** is **$3a$**. $6a^2 - 9a = **3a(2a - 3)**$."
+  },
+  {
+    "id": 28,
+    "question": "Expand the expression $**(x+3)(x-2)**$.",
+    "options": {
+      "A": "$**x^2 + x - 6**$",
+      "B": "$x^2 - x - 6$",
+      "C": "$x^2 + 5x - 6$",
+      "D": "$x^2 - 6$"
+    },
+    "answer": "A",
+    "explanation": "Using **FOIL**: $x(x) + x(-2) + 3(x) + 3(-2) = x^2 - 2x + 3x - 6 = **x^2 + x - 6**$."
+  },
+  {
+    "id": 29,
+    "question": "If $**x=2**$ and $**y=-1**$, find the value of **$2x^2 - y$**.",
+    "options": {
+      "A": "7",
+      "B": "**9**",
+      "C": "3",
+      "D": "5"
+    },
+    "answer": "B",
+    "explanation": "Substitute the values: $2(2)^2 - (-1) = 2(4) + 1 = 8 + 1 = **9**$."
+  },
+  {
+    "id": 30,
+    "question": "The expression $4x^2 + 7x - 5$ is classified as a **trinomial**.",
+    "options": {
+      "A": "**True**",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": "A **trinomial** is a polynomial with exactly **three terms**."
+  },
+  {
+    "id": 31,
+    "question": "Solve for $k$: $**5k - 7 = 18**$.",
+    "options": {
+      "A": "**5**",
+      "B": "4",
+      "C": "3",
+      "D": "25"
+    },
+    "answer": "A",
+    "explanation": "$5k = 18 + 7 = 25$. $k = \\frac{25}{5} = **5**$."
+  },
+  {
+    "id": 32,
+    "question": "Simplify the expression $**p^2 \\div p^{-3}**$.",
+    "options": {
+      "A": "$p^{-1}$",
+      "B": "$**p^5**$",
+      "C": "$p^{-6}$",
+      "D": "$p^{5}$"
+    },
+    "answer": "B",
+    "explanation": "Using the law of indices $a^m \\div a^n = a^{m-n}$, we get $p^{2 - (-3)} = p^{2+3} = **p^5**$."
+  },
+  {
+    "id": 33,
+    "question": "Which set of values satisfies the inequality $**2x - 1 > 5**$?",
+    "options": {
+      "A": "$x < 3$",
+      "B": "$**x > 3**$",
+      "C": "$x \\le 3$",
+      "D": "$x \\ge 3$"
+    },
+    "answer": "B",
+    "explanation": "Add 1 to both sides: $2x > 6$. Divide by 2: **$x > 3$**."
+  },
+  {
+    "id": 34,
+    "question": "Expand and simplify $**4(2m - 3) + 5**$.",
+    "options": {
+      "A": "$**8m - 7**$",
+      "B": "$8m - 12$",
+      "C": "$8m + 2$",
+      "D": "$8m - 17$"
+    },
+    "answer": "A",
+    "explanation": "$4(2m - 3) + 5 = 8m - 12 + 5 = **8m - 7**$."
+  },
+  {
+    "id": 35,
+    "question": "The solution to the equation $**3(x-1) = 6**$ is **$x=3$**.",
+    "options": {
+      "A": "**True**",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": "Divide by 3: $x-1 = 2$. Add 1: $x = **3**$."
+  },
+  {
+    "id": 36,
+    "question": "Simplify the expression $**\\frac{10y^3z^2}{5yz}**$.",
+    "options": {
+      "A": "$**2y^2z**$",
+      "B": "$2y^3z$",
+      "C": "$5y^2z$",
+      "D": "$2yz$"
+    },
+    "answer": "A",
+    "explanation": "Divide the coefficients: $10/5 = 2$. Divide the powers: $y^{3-1} = y^2$ and $z^{2-1} = z$. Result: $**2y^2z**$."
+  },
+  {
+    "id": 37,
+    "question": "In an algebraic expression, a term that does not contain a variable is called a...",
+    "options": {
+      "A": "Coefficient",
+      "B": "**Constant term**",
+      "C": "Index",
+      "D": "Like term"
+    },
+    "answer": "B",
+    "explanation": "A **constant term** is a number on its own, whose value **does not change**."
+  },
+  {
+    "id": 38,
+    "question": "Given the simultaneous equations: $**x+y=5**$ and $**x-y=1**$. Find the value of $**x**$.",
+    "options": {
+      "A": "2",
+      "B": "**3**",
+      "C": "4",
+      "D": "1"
+    },
+    "answer": "B",
+    "explanation": "Adding the two equations: $(x+y) + (x-y) = 5 + 1$. $2x = 6$. $x = **3**$."
+  },
+  {
+    "id": 39,
+    "question": "Solve for $y$: $**\\frac{y}{2} + 1 = 5**$.",
+    "options": {
+      "A": "**8**",
+      "B": "12",
+      "C": "4",
+      "D": "10"
+    },
+    "answer": "A",
+    "explanation": "Subtract 1 from both sides: $\\frac{y}{2} = 4$. Multiply by 2: $y = **8**$."
+  },
+  {
+    "id": 40,
+    "question": "Factorize the quadratic expression $**x^2 - 49**$.",
+    "options": {
+      "A": "$(x-7)(x-7)$",
+      "B": "$**(x+7)(x-7)**$",
+      "C": "$(x-49)(x+1)$",
+      "D": "$(x+7)^2$"
+    },
+    "answer": "B",
+    "explanation": "This is a **difference of two squares**: $a^2 - b^2 = (a+b)(a-b)$. $x^2 - 7^2 = **(x+7)(x-7)**$."
+  },
+  {
+    "id": 41,
+    "question": "The product of the binomials $(a+b)$ and $(a-b)$ is $**a^2 + b^2**$.",
+    "options": {
+      "A": "True",
+      "B": "**False**"
+    },
+    "answer": "B",
+    "explanation": "The correct product is **$a^2 - b^2$** (**difference of two squares**)."
+  },
+  {
+    "id": 42,
+    "question": "Solve the inequality $**4x \\le 16**$.",
+    "options": {
+      "A": "$x \\ge 4$",
+      "B": "$x > 4$",
+      "C": "$**x \\le 4**$",
+      "D": "$x < 4$"
+    },
+    "answer": "C",
+    "explanation": "Divide both sides by 4: $x \\le \\frac{16}{4} \\Rightarrow **x \\le 4**$."
+  },
+  {
+    "id": 43,
+    "question": "Find the value of $**3^2 + 5^0**$.",
+    "options": {
+      "A": "**10**",
+      "B": "11",
+      "C": "35",
+      "D": "8"
+    },
+    "answer": "A",
+    "explanation": "$3^2 = **9**$. Any non-zero number raised to the power of **0 is 1**, so $5^0 = **1**$. $9 + 1 = **10**$."
+  },
+  {
+    "id": 44,
+    "question": "What is the **coefficient** of the term $**xy**$ in the expression $5x^2 - 3xy + 2y^2$?",
+    "options": {
+      "A": "5",
+      "B": "$**-3**$",
+      "C": "3",
+      "D": "2"
+    },
+    "answer": "B",
+    "explanation": "The **coefficient** is the numerical factor multiplying the variables. In **$-3xy$**, the coefficient is **$-3$**."
+  },
+  {
+    "id": 45,
+    "question": "If $\\frac{a}{b} = 2$, express **$a$ in terms of $b$**.",
+    "options": {
+      "A": "$a = b + 2$",
+      "B": "$a = \\frac{b}{2}$",
+      "C": "$**a = 2b**$",
+      "D": "$a = b - 2$"
+    },
+    "answer": "C",
+    "explanation": "Multiply both sides of the equation by **$b$** to isolate $a$: **$a = 2b$**."
+  },
+  {
+    "id": 46,
+    "question": "Find the **area of a triangle** with a **base** of **$8 cm$** and a corresponding **height** of **$5 cm$**.",
+    "options": {
+      "A": "$40 cm^2$",
+      "B": "$**20 cm^2**$",
+      "C": "$13 cm^2$",
+      "D": "$26 cm^2$"
+    },
+    "answer": "B",
+    "explanation": "Area of a triangle = $\\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 8 \\times 5 = **20 cm^2**$."
+  },
+  {
+    "id": 47,
+    "question": "Calculate the **circumference of a circle** with a **radius** of **$7 cm$** (use $\\pi = \\frac{22}{7}$).",
+    "options": {
+      "A": "$22 cm$",
+      "B": "$**44 cm**$",
+      "C": "$154 cm$",
+      "D": "$88 cm$"
+    },
+    "answer": "B",
+    "explanation": "Circumference $C = 2\\pi r = 2 \\times \\frac{22}{7} \\times 7 = **44 cm**$."
+  },
+  {
+    "id": 48,
+    "question": "What is the **sum of the interior angles** of any convex **quadrilateral**?",
+    "options": {
+      "A": "$180^\\circ$",
+      "B": "$270^\\circ$",
+      "C": "$**360^\\circ**$",
+      "D": "$540^\\circ$"
+    },
+    "answer": "C",
+    "explanation": "The sum of interior angles is given by $(n-2) \\times 180^\\circ$. For $n=4$, $(4-2) \\times 180^\\circ = **360^\\circ**$."
+  },
+  {
+    "id": 49,
+    "question": "A polygon with exactly **5 sides** and 5 interior angles is called a...",
+    "options": {
+      "A": "Hexagon",
+      "B": "**Pentagon**",
+      "C": "Heptagon",
+      "D": "Octagon"
+    },
+    "answer": "B",
+    "explanation": "A polygon with **5 sides** is a **pentagon**."
+  },
+  {
+    "id": 50,
+    "question": "Calculate the **volume of a cuboid** with **length $6 cm$**, **width $4 cm$**, and **height $2 cm$**.",
+    "options": {
+      "A": "$12 cm^3$",
+      "B": "$24 cm^3$",
+      "C": "$**48 cm^3**$",
+      "D": "$64 cm^3$"
+    },
+    "answer": "C",
+    "explanation": "Volume of cuboid $V = l \\times w \\times h = 6 \\times 4 \\times 2 = **48 cm^3**$."
+  },
+  {
+    "id": 51,
+    "question": "A **reflection** of a point in the **x-axis** changes the sign of its **x-coordinate**.",
+    "options": {
+      "A": "True",
+      "B": "**False**"
+    },
+    "answer": "B",
+    "explanation": "A reflection in the **x-axis** maps $(x, y)$ to $(x, -y)$, which changes the sign of the **y-coordinate**, not the x-coordinate."
+  },
+  {
+    "id": 52,
+    "question": "Find the **area of a square** whose **perimeter** is **$20 cm$**.",
+    "options": {
+      "A": "$**25 cm^2**$",
+      "B": "$16 cm^2$",
+      "C": "$400 cm^2$",
+      "D": "$100 cm^2$"
+    },
+    "answer": "A",
+    "explanation": "Perimeter $P = 4s$. $20 = 4s \\Rightarrow s = **5 cm**$. Area $A = s^2 = 5^2 = **25 cm^2**$."
+  },
+  {
+    "id": 53,
+    "question": "The **image** of point $**P(3, -5)**$ after a **translation** by vector $\\begin{pmatrix} -1 \\\\ 4 \\end{pmatrix}$ is:",
+    "options": {
+      "A": "$P'(4, -9)$",
+      "B": "$**P'(2, -1)**$",
+      "C": "$P'(4, -1)$",
+      "D": "$P'(2, -9)$"
+    },
+    "answer": "B",
+    "explanation": "New point $(x', y') = (3 + (-1), -5 + 4) = **(2, -1)**$."
+  },
+  {
+    "id": 54,
+    "question": "In a **right-angled triangle**, the angle **opposite the hypotenuse** is always:",
+    "options": {
+      "A": "$**90^\\circ**$",
+      "B": "$45^\\circ$",
+      "C": "Acute",
+      "D": "Obtuse"
+    },
+    "answer": "A",
+    "explanation": "The **hypotenuse** is the side opposite the **right angle** ($**90^\\circ**$) in a right-angled triangle."
+  },
+  {
+    "id": 55,
+    "question": "A **kite** is a special type of **parallelogram**.",
+    "options": {
+      "A": "True",
+      "B": "**False**"
+    },
+    "answer": "B",
+    "explanation": "A **parallelogram** has two pairs of parallel sides. A **kite** does not necessarily have parallel sides, though both are quadrilaterals."
+  },
+  {
+    "id": 56,
+    "question": "Calculate the **total surface area** of a **cube** with a **side length** of **$5 cm$**.",
+    "options": {
+      "A": "$25 cm^2$",
+      "B": "$100 cm^2$",
+      "C": "$125 cm^2$",
+      "D": "$**150 cm^2**$"
+    },
+    "answer": "D",
+    "explanation": "A **cube** has **6 identical square faces**. Area of one face $= 5^2 = 25 cm^2$. Total surface area $= 6 \\times 25 = **150 cm^2**$."
+  },
+  {
+    "id": 57,
+    "question": "A **rotation of $180^\\circ$** about the **origin** maps a point $(x, y)$ to:",
+    "options": {
+      "A": "$(-x, y)$",
+      "B": "$(x, -y)$",
+      "C": "$**(-x, -y)**$",
+      "D": "$(y, x)$"
+    },
+    "answer": "C",
+    "explanation": "A **$180^\\circ$ rotation** (half turn) **inverts the coordinates** through the origin."
+  },
+  {
+    "id": 58,
+    "question": "Find the **radius** of a circle if its **area** is **$154 cm^2$** (use $\\pi = \\frac{22}{7}$).",
+    "options": {
+      "A": "$**7 cm**$",
+      "B": "$14 cm$",
+      "C": "$21 cm$",
+      "D": "$49 cm$"
+    },
+    "answer": "A",
+    "explanation": "Area $A = \\pi r^2$. $154 = \\frac{22}{7} \\times r^2$. $r^2 = 154 \\times \\frac{7}{22} = 7 \\times 7 = 49$. $r = \\sqrt{49} = **7 cm**$."
+  },
+  {
+    "id": 59,
+    "question": "What is the size of an **interior angle** of a **regular pentagon**?",
+    "options": {
+      "A": "$**108^\\circ**$",
+      "B": "$72^\\circ$",
+      "C": "$90^\\circ$",
+      "D": "$120^\\circ$"
+    },
+    "answer": "A",
+    "explanation": "Sum of interior angles $= (5-2) \\times 180^\\circ = 540^\\circ$. Each interior angle $= \\frac{540^\\circ}{5} = **108^\\circ**$."
+  },
+  {
+    "id": 60,
+    "question": "All **congruent** shapes are **similar**, but not all similar shapes are congruent.",
+    "options": {
+      "A": "**True**",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": "**Congruent** shapes are **identical in size and shape**, meaning their corresponding angles and side ratios (1:1) are equal, so they are similar. **Similar** shapes have equal corresponding angles but only **proportional** sides."
+  },
+  {
+    "id": 61,
+    "question": "The **total angle** formed by angles on a **straight line** is always:",
+    "options": {
+      "A": "$90^\\circ$",
+      "B": "$**180^\\circ**$",
+      "C": "$270^\\circ$",
+      "D": "$360^\\circ$"
+    },
+    "answer": "B",
+    "explanation": "Angles on a **straight line** sum up to **$180^\\circ$** (a straight angle)."
+  },
+  {
+    "id": 62,
+    "question": "The distance around the boundary of a two-dimensional shape is called its:",
+    "options": {
+      "A": "Area",
+      "B": "Volume",
+      "C": "**Perimeter**",
+      "D": "Diagonal"
+    },
+    "answer": "C",
+    "explanation": "**Perimeter** is the length of the **boundary** of a plane figure."
+  },
+  {
+    "id": 63,
+    "question": "Two distinct lines in the same plane that **never intersect** are called:",
+    "options": {
+      "A": "Perpendicular lines",
+      "B": "Transversals",
+      "C": "**Parallel lines**",
+      "D": "Skew lines"
+    },
+    "answer": "C",
+    "explanation": "**Parallel lines** have the same direction and maintain a constant distance, so they **never intersect**."
+  },
+  {
+    "id": 64,
+    "question": "The formula for the **volume of a cylinder** is $**V = \\pi r^2 h**$.",
+    "options": {
+      "A": "**True**",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": "The **volume of a cylinder** is the **area of the circular base** ($\\pi r^2$) multiplied by its **height** ($h$)."
+  },
+  {
+    "id": 65,
+    "question": "In an **isosceles triangle**, if one base angle is **$50^\\circ$**, what is the measure of the **vertex angle**?",
+    "options": {
+      "A": "$50^\\circ$",
+      "B": "$100^\\circ$",
+      "C": "$**80^\\circ**$",
+      "D": "$130^\\circ$"
+    },
+    "answer": "C",
+    "explanation": "The two base angles are equal, so the sum of base angles is $50^\\circ + 50^\\circ = 100^\\circ$. The vertex angle $= 180^\\circ - 100^\\circ = **80^\\circ**$."
+  },
+  {
+    "id": 66,
+    "question": "What is the **mode** of the following set of numbers: **5, 7, 5, 8, 9, 7, 5**?",
+    "options": {
+      "A": "**5**",
+      "B": "7",
+      "C": "8",
+      "D": "7.5"
+    },
+    "answer": "A",
+    "explanation": "The **mode** is the value that **appears most often** in a data set. The number **5** appears three times."
+  },
+  {
+    "id": 67,
+    "question": "Find the **median** of the data set: **12, 15, 10, 18, 11**.",
+    "options": {
+      "A": "15",
+      "B": "**12**",
+      "C": "13.2",
+      "D": "10"
+    },
+    "answer": "B",
+    "explanation": "First, **order the data**: 10, 11, **12**, 15, 18. The **median** is the **middle value**, which is **12**."
+  },
+  {
+    "id": 68,
+    "question": "Calculate the **mean (average)** of the numbers **3, 5, 7, 9**.",
+    "options": {
+      "A": "5",
+      "B": "**6**",
+      "C": "7",
+      "D": "4"
+    },
+    "answer": "B",
+    "explanation": "Mean = $\\frac{\\text{Sum of values}}{\\text{Number of values}} = \\frac{3+5+7+9}{4} = \\frac{24}{4} = **6**$."
+  },
+  {
+    "id": 69,
+    "question": "The **sum of the probabilities** of all possible outcomes in a random experiment is always **1**.",
+    "options": {
+      "A": "**True**",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": "This is a **fundamental rule of probability**. It represents **certainty** that one of the possible outcomes will occur."
+  },
+  {
+    "id": 70,
+    "question": "If a **fair six-sided die** is rolled, what is the **probability** of getting an **even number**?",
+    "options": {
+      "A": "$\\frac{1}{6}$",
+      "B": "$\\frac{1}{3}$",
+      "C": "$**\\frac{1}{2}**$",
+      "D": "$\\frac{2}{3}$"
+    },
+    "answer": "C",
+    "explanation": "The possible outcomes are {1, 2, 3, 4, 5, 6}. The **even numbers** are {**2, 4, 6**} (**3 outcomes**). Probability = $\\frac{3}{6} = **\\frac{1}{2}**$."
+  },
+  {
+    "id": 71,
+    "question": "A **circle graph (pie chart)** used to represent a data set must have a total central angle of:",
+    "options": {
+      "A": "$90^\\circ$",
+      "B": "$180^\\circ$",
+      "C": "$**360^\\circ**$",
+      "D": "$100^\\circ$"
+    },
+    "answer": "C",
+    "explanation": "The entire circle represents the whole data set, and the angle in a **full circle** is **$360^\\circ$**."
+  },
+  {
+    "id": 72,
+    "question": "Which type of graph is best suited for representing **proportional parts of a whole**?",
+    "options": {
+      "A": "Bar chart",
+      "B": "**Pie chart**",
+      "C": "Line graph",
+      "D": "Histogram"
+    },
+    "answer": "B",
+    "explanation": "A **pie chart** (circle graph) visually shows how the total is divided into sectors representing **proportions**."
+  },
+  {
+    "id": 73,
+    "question": "The process of collecting data from a small, representative part of a larger group is called **sampling**.",
+    "options": {
+      "A": "**True**",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": "**Sampling** is the process of selecting a **subset of a population** to represent the whole."
+  },
+  {
+    "id": 74,
+    "question": "The **difference** between the **highest** and **lowest values** in a data set is called the:",
+    "options": {
+      "A": "Mean",
+      "B": "Median",
+      "C": "**Range**",
+      "D": "Mode"
+    },
+    "answer": "C",
+    "explanation": "The **range** is calculated as **Maximum Value - Minimum Value**."
+  },
+  {
+    "id": 75,
+    "question": "If the **mean** of the four numbers **4, 6, $x$, 10** is **7**, find the value of $**x**$.",
+    "options": {
+      "A": "6",
+      "B": "**8**",
+      "C": "12",
+      "D": "4"
+    },
+    "answer": "B",
+    "explanation": "Sum of numbers $= 4 \\times 7 = 28$. $4 + 6 + x + 10 = 28$. $20 + x = 28$. $x = **8**$."
+  },
+  {
+    "id": 76,
+    "question": "A ratio of **3:4** is equivalent to what **percentage**?",
+    "options": {
+      "A": "**75%**",
+      "B": "30%",
+      "C": "40%",
+      "D": "12%"
+    },
+    "answer": "A",
+    "explanation": "The fraction is $\\frac{3}{4}$. To convert to a percentage, $\\frac{3}{4} \\times 100\\% = **75\\%**$."
+  },
+  {
+    "id": 77,
+    "question": "Solve for $x$: $**2(x+3) = 14**$.",
+    "options": {
+      "A": "5",
+      "B": "**4**",
+      "C": "7",
+      "D": "8"
+    },
+    "answer": "B",
+    "explanation": "Divide by 2: $x+3 = 7$. Subtract 3: $x = **4**$."
+  },
+  {
+    "id": 78,
+    "question": "What is the **area of a trapezoid** (trapezium) with parallel sides of length $a$ and $b$ and height $h$?",
+    "options": {
+      "A": "$A = abh$",
+      "B": "$A = h(a+b)$",
+      "C": "$**A = \\frac{1}{2}h(a+b)**$",
+      "D": "$A = \\frac{1}{2}(a+b)$"
+    },
+    "answer": "C",
+    "explanation": "The formula for the **area of a trapezoid** is $A = \\frac{1}{2} \\times \\text{height} \\times (\\text{sum of parallel sides})$."
+  },
+  {
+    "id": 79,
+    "question": "The term **'exponent'** is another name for the **index** or **power** of a number.",
+    "options": {
+      "A": "**True**",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": "**Exponent**, **index**, and **power** are synonymous terms used to denote the number of times a base number is multiplied by itself."
+  },
+  {
+    "id": 80,
+    "question": "Which of the following is an equivalent expression to $**a^2b^3 \\times a^{-1}b^4**$?",
+    "options": {
+      "A": "$**ab^7**$",
+      "B": "$a^3b^7$",
+      "C": "$a^{-2}b^{12}$",
+      "D": "$a^{1}b^{-1}$"
+    },
+    "answer": "A",
+    "explanation": "Use $x^m x^n = x^{m+n}$: $a^{2+(-1)}b^{3+4} = a^1 b^7 = **ab^7**$."
+  },
+  {
+    "id": 81,
+    "question": "What is the **order of rotational symmetry** of a **square**?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "**4**",
+      "D": "8"
+    },
+    "answer": "C",
+    "explanation": "A **square** can be rotated $90^\\circ$, $180^\\circ$, $270^\\circ$, and $360^\\circ$ to look exactly the same, giving an **order of 4**."
+  },
+  {
+    "id": 82,
+    "question": "A **recurring decimal**, such as $0.141414...$, is a **rational number**.",
+    "options": {
+      "A": "**True**",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": "All **recurring** (repeating) and terminating decimals can be expressed as a fraction $\\frac{p}{q}$, making them **rational numbers**."
+  },
+  {
+    "id": 83,
+    "question": "Simplify the expression $**\\frac{3}{4} - \\frac{1}{8}**$.",
+    "options": {
+      "A": "$\\frac{2}{4}$",
+      "B": "$**\\frac{5}{8}**$",
+      "C": "$\\frac{1}{2}$",
+      "D": "$\\frac{7}{8}$"
+    },
+    "answer": "B",
+    "explanation": "LCM is 8. $\\frac{3}{4} - \\frac{1}{8} = \\frac{6}{8} - \\frac{1}{8} = **\\frac{5}{8}**$."
+  },
+  {
+    "id": 84,
+    "question": "Given the set $A = \\{p, q, r\\}$, how many **subsets** does set $A$ have?",
+    "options": {
+      "A": "3",
+      "B": "6",
+      "C": "**8**",
+      "D": "12"
+    },
+    "answer": "C",
+    "explanation": "The **number of subsets** is $**2^n**$, where $n$ is the number of elements. $2^3 = **8**$."
+  },
+  {
+    "id": 85,
+    "question": "Factorize the quadratic expression $**2x^2 + 4x**$.",
+    "options": {
+      "A": "$**2x(x + 2)**$",
+      "B": "$2(x^2 + 2x)$",
+      "C": "$x(2x + 4)$",
+      "D": "$2(x+2)$"
+    },
+    "answer": "A",
+    "explanation": "The **Greatest Common Divisor** is **$2x$**. $2x^2 + 4x = **2x(x + 2)**$."
+  },
+  {
+    "id": 86,
+    "question": "If you throw a coin twice, what is the **probability** of getting **two heads (HH)**?",
+    "options": {
+      "A": "$\\frac{1}{2}$",
+      "B": "$\\frac{1}{3}$",
+      "C": "$**\\frac{1}{4}**$",
+      "D": "$1$"
+    },
+    "answer": "C",
+    "explanation": "Total outcomes: {HH, HT, TH, TT} (**4 outcomes**). Probability of HH is **$\\frac{1}{4}$**."
+  },
+  {
+    "id": 87,
+    "question": "A parallelogram whose **adjacent sides are equal** is a **rhombus**.",
+    "options": {
+      "A": "**True**",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": "A **rhombus** is defined as a quadrilateral with **all four sides of equal length**. This makes it a parallelogram with equal adjacent sides."
+  },
+  {
+    "id": 88,
+    "question": "The **surface area of a closed cylinder** with radius $r$ and height $h$ is given by $**2\\pi r(r+h)**$.",
+    "options": {
+      "A": "**True**",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": "Total Surface Area = $2 \\times (\\text{Area of base}) + \\text{Area of curved surface} = 2\\pi r^2 + 2\\pi r h = **2\\pi r(r+h)**$."
+  },
+  {
+    "id": 89,
+    "question": "The process of collecting data by **observing and recording** is called...",
+    "options": {
+      "A": "Analysis",
+      "B": "Measurement",
+      "C": "Experimentation",
+      "D": "**Observation**"
+    },
+    "answer": "D",
+    "explanation": "**Observation** is a primary method of **data collection** in statistics."
+  },
+  {
+    "id": 90,
+    "question": "What is **40%** of **300**?",
+    "options": {
+      "A": "12",
+      "B": "**120**",
+      "C": "75",
+      "D": "150"
+    },
+    "answer": "B",
+    "explanation": "$\\frac{40}{100} \\times 300 = 40 \\times 3 = **120**$."
+  },
+  {
+    "id": 91,
+    "question": "The number **100** in **base two** is:",
+    "options": {
+      "A": "$110100_2$",
+      "B": "$1010010_2$",
+      "C": "$**1100100_2**$",
+      "D": "$1001100_2$"
+    },
+    "answer": "C",
+    "explanation": "Repeated division of **100** by 2 gives the remainders 0, 0, 1, 0, 0, 1, 1 (read upwards). **$100 = 1100100_2$**."
+  },
+  {
+    "id": 92,
+    "question": "Solve the equation $**\\frac{x}{5} - 2 = 3**$.",
+    "options": {
+      "A": "5",
+      "B": "**25**",
+      "C": "10",
+      "D": "15"
+    },
+    "answer": "B",
+    "explanation": "Add 2 to both sides: $\\frac{x}{5} = 5$. Multiply by 5: $x = **25**$."
+  },
+  {
+    "id": 93,
+    "question": "An **exterior angle of a triangle** is equal to the **sum of the two interior opposite angles**.",
+    "options": {
+      "A": "**True**",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": "This is the **Exterior Angle Theorem** for triangles."
+  },
+  {
+    "id": 94,
+    "question": "If the **mean** of **three numbers** is **15**, what is their **total sum**?",
+    "options": {
+      "A": "5",
+      "B": "30",
+      "C": "**45**",
+      "D": "60"
+    },
+    "answer": "C",
+    "explanation": "Sum = Mean $\\times$ Number of values $= 15 \\times 3 = **45**$."
+  },
+  {
+    "id": 95,
+    "question": "Simplify $**-(2x - 3) + 5x**$.",
+    "options": {
+      "A": "$**3x + 3**$",
+      "B": "$7x - 3$",
+      "C": "$3x - 3$",
+      "D": "$7x + 3$"
+    },
+    "answer": "A",
+    "explanation": "$-(2x - 3) + 5x = -2x + 3 + 5x = **3x + 3**$."
+  },
+  {
+    "id": 96,
+    "question": "The **LCM** of **7** and **11** is **77**.",
+    "options": {
+      "A": "**True**",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": "Since **7 and 11 are prime numbers**, their **LCM** is their product: $7 \\times 11 = **77**$."
+  },
+  {
+    "id": 97,
+    "question": "The coordinates of a point **reflected** in the **y-axis** are $(x, y) \\rightarrow$",
+    "options": {
+      "A": "$**(-x, y)**$",
+      "B": "$(x, -y)$",
+      "C": "$(-x, -y)$",
+      "D": "$(y, x)$"
+    },
+    "answer": "A",
+    "explanation": "**Reflection in the y-axis** changes the sign of the **x-coordinate**."
+  },
+  {
+    "id": 98,
+    "question": "What is the **perimeter** of a **rectangle** with **length $10 cm$** and **width $3 cm$**?",
+    "options": {
+      "A": "$30 cm$",
+      "B": "$13 cm$",
+      "C": "$**26 cm**$",
+      "D": "$60 cm$"
+    },
+    "answer": "C",
+    "explanation": "Perimeter $P = 2(l + w) = 2(10 + 3) = 2(13) = **26 cm**$."
+  },
+  {
+    "id": 99,
+    "question": "In a **Venn diagram**, the **union** of two sets **$A \\cup B$** represents elements that belong to **either $A$ or $B$ or both**.",
+    "options": {
+      "A": "**True**",
+      "B": "False"
+    },
+    "answer": "A",
+    "explanation": "The **union** ($**A \\cup B**$) includes all elements from set A, set B, and their intersection."
+  },
+  {
+    "id": 100,
+    "question": "If a shoe price of **GHS 80** is **reduced by 20%**, what is the **new price**?",
+    "options": {
+      "A": "**GHS 64**",
+      "B": "GHS 76",
+      "C": "GHS 16",
+      "D": "GHS 96"
+    },
+    "answer": "A",
+    "explanation": "Reduction amount: $20\\% \\times 80 = 16$. New price: $80 - 16 = **64**$."
+  }
+]
